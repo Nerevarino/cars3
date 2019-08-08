@@ -1,0 +1,38 @@
+#app-root {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+/* input[type="submit"]:hover { */
+/*     background-color:#a6a6a6; */
+/* } */
+
+#content {
+    width:20em;
+
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+#topfixdoc {
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:flex-start;
+
+    z-index:2;
+}

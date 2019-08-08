@@ -1,1 +1,160 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+body {
+    background-color:#d9d9d9;
+}
+
+a {
+    text-decoration:none;
+}
+
+.crs-headerbar {
+    font-size:1.3em;
+    color:white;    
+    width:100%;
+    border-radius:0.3em 0.3em 0 0;
+    padding:0.3em;
+
+    text-align:center;
+    background-color:#29293d;
+}
+
+
+.crs-bar {
+    width:20em;
+    height:2.8em;
+    padding:0 0.2em 0 0.2em;
+    border-radius:0.3em;
+
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:#404040;
+}
+
+.crs-textbutton {
+    padding:0.3em;
+    font-size:1.3em;    
+    border-radius:0.2em;
+    background-color:#8c8c8c;
+}
+
+.crs-textbutton:hover {
+    background-color:#a6a6a6;
+}
+
+.crs-imgbutton {
+    width:2.3em;
+    height:2.3em;
+
+    padding:0.3em;
+    border-radius:0.2em;
+    
+    background-color:#8c8c8c;
+}
+
+.crs-imgbutton > img {
+    width:100%;
+    height:100%;
+}
+
+.crs-imgbutton:hover {
+    background-color:#a6a6a6;
+}
+
+.crs-combutton {
+    height:2.3em;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+
+    border-radius:0.2em;
+
+    background-color:#8c8c8c;    
+}
+
+.crs-combutton > img {
+    width:2.3em;
+    padding:0.3em;
+}
+
+.crs-combutton > div {
+    font-size:1.3em;
+    padding:0.3em;
+}
+
+.crs-combutton:hover {
+    background-color:#a6a6a6;
+}
+
+
+.crs-bar > .crs-textbutton {
+    margin-right:0.2em;
+}
+
+.crs-bar > .crs-imgbutton {
+    margin-right:0.2em;
+}
+
+.crs-bar > .crs-combutton {
+    margin-right:0.2em;
+}
+
+.crs-bar > .crs-combutton:last-child {
+    margin-right:0;
+}
+
+
+.crs-header {
+    font-size:1.2em;
+    color:#14141f;
+    padding:0.3em;
+}
+
+.crs-field {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    align-items:center;
+
+    font-size:1em;
+}
+
+.crs-field > label {
+    width:5em;
+    margin-right:0.3em;
+}
+
+.crs-field > input {
+    flex:1;
+    color:#1f1f2e;
+}
+
+.crs-textfield {
+    font-size:1.1em;
+    border-radius:0.2em;
+    color:black;
+    border-style:none;
+}
+
+.crs-headerbar {
+    font-size:1.3em;
+    color:white;    
+    width:100%;
+    border-radius:0.3em 0.3em 0 0;
+    padding:0.3em;
+
+    text-align:center;
+    background-color:#29293d;
+}
+
+input[type="submit"] {
+    border-radius:0.2em;
+}

@@ -1,0 +1,29 @@
+#loginform {
+    width:20em;
+    height:12em;
+
+    margin-top:6em;
+
+    padding:0.2em;
+    border-radius:0.5em;
+
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:#666699;
+}
+
+/* #loginform > .crs-header { */
+/*     margin-bottom:1em; */
+/* } */
+
+/* #loginform > .crs-textfield { */
+/*     margin-bottom:0.3em; */
+/* } */
+
+#tryLogin {
+    color:#14141f;
+    font-size:1.2em;
+}

@@ -1,0 +1,6 @@
+<div id="carslist">
+  <a *ngFor="let car of cars" class="crs-carpreview" [routerLink]="['/carinfo', car.id]">
+    <img src="/assets/img/{{car.photo}}.jpg"/>
+    <div >{{car.brand + ' ' + car.model}}</div>
+  </a>  
+</div>

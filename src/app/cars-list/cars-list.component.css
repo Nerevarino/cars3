@@ -1,0 +1,45 @@
+#carslist {
+    width:20em;
+
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding:3.3em 0 0 0;
+}
+
+
+.crs-carpreview {
+    width:100%;
+    padding:0.5em;
+    border-radius:0.3em;
+
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-items:center;
+
+    background-color:#52527a;
+
+    text-decoration:none;
+    color:white;    
+}
+   
+.crs-carpreview:hover {
+    background-color:#666699;
+}
+
+.crs-carpreview > img {
+    width:100%;
+    border-radius:0.3em;
+}
+
+.crs-carpreview > div {
+    font-size:1.3em;
+    padding:0.3em;
+}
+
+#carslist > .crs-carpreview {
+    margin-bottom:0.3em;
+}
