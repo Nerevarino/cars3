@@ -1,20 +1,16 @@
-<div id="carInfo">
+<div id="carInfo" >
   <div class="crs-headerbar">{{car.brand + ' ' + car.model}}</div>
   <img id="carPhoto" src="/assets/img/{{car.photo}}.jpg"/>
-  <form id="carProperties">
+  <div id="carProperties">
     <div class="crs-field">
       <label for="horsePower">Мощность</label>
-      <input id="horsePower" type="text" value="{{car.power}}"/>
+      <input id="horsePower" type="text" [value]="car.power"/>
     </div>
     <div class="crs-field">
-      <label for="ABS">ABS</label>
-      <input id="ABS" type="text" value="Есть" />
-    </div>	
-    <div class="crs-field">
-      <label for="ESP">ESP</label>
-      <input id="ESP" type="text" value="Есть" />
+      <label for="MAP">Место</label>
+      <input id="MAP" type="text" [value]="car.location"/>
     </div>
-    <input id="update" type="submit" value="Обновить"/>
-  </form>
-  <a id="showMap" href="https://yandex.ru/maps/-/{{car.location}}">На карте</a>
+    <input id="update" type="submit" value="Обновить" (click)="onUpdateCar()"/>
+  </div>
+  <a id="showMap" href="{{car.location}}">На карте</a>
 </div>

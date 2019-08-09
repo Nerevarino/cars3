@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-// import { Observable, of } from 'rxjs';
+import { CarsmanagerService } from '../carsmanager.service'
+import { Observable } from 'rxjs';
 // import { share } from 'rxjs/operators';
 
 @Component({
@@ -12,20 +12,15 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CarsListComponent implements OnInit {
-    dataObs;
-    
+    dataObs: Observable<any>;
 
-    constructor(private http: HttpClient) {
+
+    constructor(private carsmanager: CarsmanagerService) {
 
     }
 
     ngOnInit() {
-	this.dataObs = this.http.get('/serve/?func=carslist');
+        this.dataObs = this.carsmanager.getObservableCarsList();
     }
-
-    // onGetCars(data) {
-    // 	this.data = data;
-    // 	console.log(data['carslist']);
-    // }
 
 }
